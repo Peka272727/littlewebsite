@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Simon Basketball League! Dedicated to promoting basketball in Australia.">
+    <title>Simon Basketball League</title>
+    <link rel="stylesheet" href="OfficialHomePage.css">
+    <script src="HomePage.js"></script>
+    <!-- Added for responsiveness and external JS -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo content here -->
+            </div>
+            <h1>Simon Basketball League</h1> <!-- Main title -->
+            <div class="lang-menu">
+                <h2>Choose Language</h2> <!-- Language heading -->
+                <div class="selected-lang"></div>
+                <div class="topnav"></div>
+                <ul>
+                    <li><a href="#" class="de">German</a></li>
+                    <li><a href="#" class="en">English</a></li>
+                    <li><a href="#" class="fr">French</a></li>
+                    <li><a href="#" class="ar">Arabic</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="dropdown-content">
+        <a href="OfficialHomepage.html">Refresh</a>
+        <a href="SimonMerchandise.html">Merchandise</a>
+        <a href="SimonRegistrationForm.html">Registration</a>
+        <a href="SimonQuote.html">Quotes</a>
+        <a href="Location.html">Location</a>
+        <a href="SimonSocialMedia.html">Social media</a>
+        <a href="LocalCafe.html">Other</a>
+    </div>
+
+    <main>
+        <section id="overview">
+            <h1>What's here?</h1>
+            <p>I have decided to create a space for everything related to basketball.</p>
+        </section>
+
+        <section id="donations">
+            <h2>Support Us</h2>
+            <p>If you believe in our cause and want to support our efforts, consider making a donation today. Your contribution will help us provide scholarships and improve our facilities for players.</p>
+            <button onclick="location.href='Donations.html'">Donate Now</button>
+        </section>
+
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our upcoming events and tournaments. Join us as we compete against other teams and showcase our talent!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simon Basketball League. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+    <style>
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .container.change + .dropdown-content {
+            display: block;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<video autoplay muted loop id="myVideo">
+  <source src="720-low.mp4" type="video/mp4">
+</video>
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>DONATIONS</h1>
+  <p>Each visit of the video generates more awareness. Visit the instagram page to donate directly.</p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<!-- Optional: some overlay text to describe the video -->
+
+        <ul class="footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    <footer>
+<html>
+<head>
+  <title>Brindabella Basketball Club - Form Page</title>
+  <link rel="stylesheet" type="text/css" href="Donations.css">
+<style>
+  /* CSS for navigation bar */
+    nav {
+      background-color: #002F6C;
+      color: white;
+      padding: 0.5em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+
+    /* CSS for main content */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+.logo {
+    text-align: center; /* Center align the logo */
+}
+
+.logo img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center horizontally */
+}
+
+    h2 {
+      color: #002F6C;
+      margin-top: 2em;
+    }
+
+    /* CSS for highlights section */
+    #highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .highlight-item {
+      max-width: 300px;
+      margin: 1em;
+    }
+
+    .highlight-item img {
+      width: 100%;
+    }
+
+    .highlight-item p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<header>
+    
+	
+	
+</main>
+<footer>
+<section id="contact-us" style="background-color: #F8B134;">
+  <div class="contact-content">
+    <h2>Donate to us!</h2>
+    <p>If you can, please please feel free to donate to us!&nbsp; We'd love to have you donate to us</p>
+    <div class="contact-details">
+      <p><strong>Why: 100 percent of our funds go to Charities and help juniors join basketball</strong> </p>
+      <p><strong>How: Sign up down below! We just take $5 per year!&nbsp;</strong> </p>
+      <p><strong>Who: To save basketball for the newer generations!&nbsp;</strong> </p>
+    </div>
+    <form id="contact-form">
+      <label for="name">Credit card:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email for confirmation $:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // JavaScript code to handle form submission
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get the form data
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    
+    // Create a new element to display the form data
+    var post = document.createElement('div');
+    post.classList.add('post');
+    
+    var postContent = document.createElement('div');
+    postContent.classList.add('post-content');
+    
+    var postTitle = document.createElement('h3');
+    postTitle.textContent = name;
+    
+    var postEmail = document.createElement('p');
+    postEmail.textContent = email;
+    
+    var postMessage = document.createElement('p');
+    postMessage.textContent = message;
+    
+    postContent.appendChild(postTitle);
+    postContent.appendChild(postEmail);
+    postContent.appendChild(postMessage);
+    post.appendChild(postContent);
+    
+    // Add the new post to the page
+    var postsContainer = document.getElementById('posts-container');
+    postsContainer.appendChild(post);
+    
+    // Clear the form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+  });
+</script>
+
+<!-- Container to display the posts -->
+<div id="posts-container"></div>
+
+<html>
+<head>
+  <title>Brindabella Basketball Club - Form Page</title>
+  <link rel="stylesheet" type="text/css" href="file:///Macintosh HD/Users/simonwu/Library/CloudStorage/OneDrive-RadfordCollege/Year 10/Web development/Assessment task/styles.css">
+  <style>
+    /* CSS styles for your page */
+    /* ... */
+
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+
+	
+    </nav>
+</header>
+<main>
+  <!-- Your form content goes here -->
+ 
+  <!-- ... -->
+
+  <!-- Go Back to Home Page link -->
+  <button onclick="location.href='file:///Users/simonwu/OneDrive%20-%20Radford%20College/Year%209/Web%20development/Assessment%20task/Final-Assessment.html'">
+
+  </header>
+  <main>
+    <section id="donations">
+<p>Your generous donations help us provide better training equipment, facilities, and opportunities for our players. Your support is invaluable in helping us grow and create a positive impact in the basketball community.</p>
+      <p>If you would like to contribute to our club and make a difference, please consider making a donation using the following methods:</p>
+      <ul>
+        <li>Online donations: Visit our website's donation page to make a secure online donation.</li>
+        <li>In-person donations: You can visit our club's office during business hours and make a donation in person.</li>
+        <li>Sponsorship opportunities: If you're interested in becoming a sponsor, please contact our sponsorship team for more information.</li>
+      </ul>
+      <p>Every donation counts, and we greatly appreciate your support in helping us continue to provide an exceptional basketball experience for our players.</p>
+    </section>
+</main>
+  <footer>
+    <!-- Footer code (same as the original HTML) -->
+	    <p>&copy; 2023 Brindabella Basketball Club. All rights reserved. Simon WU</p>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+/* CSS Document */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button.block {
+    background-color: #003366;
+    color: white;
+}
+
+.buttons button.text {
+    background-color: transparent;
+    color: #003366;
+    border: 1px solid #003366;
+}
+
+.buttons button.round {
+    background-color: #003366;
+    color: white;
+    border-radius: 20px;
+}
+
+.buttons button.scroll-top {
+    background-color: #003366;
+    color: white;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul li a h1:hover {
+	color: #ff5733
+}

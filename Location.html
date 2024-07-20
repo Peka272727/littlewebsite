@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Page</title>
+    <link rel="stylesheet" href="Location.css">
+</head>
+<body>
+    <header>
+        <h1>Location</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Next</a></li>
+                <li><a href="OfficialHomepage.html"#">Prev</a></li>
+         
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Student Career Studio</h2>
+     
+    </div>
+	<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+<button class="accordion">Location 1</button>
+<div class="panel">
+  <p>At Radford College, the coaches promote internship opportunities and study the skillset of individuals throughout the Australian community. By visiting, the staff gives each student an opportunity to perform and potentially give them a division placement. </p>
+</div>
+  <div class="map">
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.481480343301!2d149.0858274110904!3d-35.24427569149526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b17ad425de8bb1d%3A0x95beaf9ccc2b9b71!2sRadford%20College!5e0!3m2!1sen!2sau!4v1711956041112!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        </div>
+					<!-- Adds different maps embedded from google -->
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Second location, built in 2023 is just avaliable now!</p>
+	
+</div>
+
+	<center><iframe src="https://www.google.com/maps/d/embed?mid=1WqHKJRaav4wpGSMN0hiz-hlIN0c&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe> </center>
+<button class="accordion">Location 3 (Coming Soon)</button>
+<div class="panel">
+  <p>At Brindabella, we are creating a new sight and have unvested over $21,000,000 dollars and employing high class athletes.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
+    <div class="buttons">
+
+        <button class="scroll-top" onclick="scrollToTop()">Scroll To Top</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Career Studio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
+
